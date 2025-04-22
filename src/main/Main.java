@@ -4,9 +4,9 @@ import externo.*;
 
 public class Main {
     public static void main(String[] args) {
-        Cliente cliente = new Cliente("12345678901", "Maria");
-        Produto notebook = new Produto("Notebook", 3500);
-        Produto mouse = new Produto("Mouse", 150);
+        Cliente cliente = new Cliente("07007840124", "André");
+        Produto notebook = new Produto("Iphone", 4500);
+        Produto mouse = new Produto("Air Pods", 750);
 
         BancoDeDados.addCliente(cliente);
         BancoDeDados.addProduto(notebook);
@@ -19,15 +19,15 @@ public class Main {
         Vendas.venda(pedido);
 
         if (!Financeiro.verificarPagamento(pedido)) {
-            System.out.println("Cliente inadimplente. Pedido cancelado.");
+            System.out.println("O cliente está inadimplente. O pedido foi cancelado... :(");
             return;
         }
 
         boolean enviado = Expedicao.enviarPedido(pedido);
         if (enviado) {
-            System.out.println("Pedido finalizado com sucesso.");
+            System.out.println("O pedido foi finalizado com sucesso... ;)");
         } else {
-            System.out.println("Falha na expedição. Pedido não finalizado.");
+            System.out.println("Houve uma falha na expedição. O pedido não foi finalizado... :(");
         }
     }
 }

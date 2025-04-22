@@ -31,9 +31,9 @@ public class Cliente {
     @Override
     public String toString() {
         return "Cliente{" +
-                "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", inadimplente=" + inadimplente +
+                "Nome='" + nome + '\'' +
+                ", Cpf='" + cpf + '\'' +
+                ", Inadimplente=" + inadimplente +
                 '}';
     }
 }

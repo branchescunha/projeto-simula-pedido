@@ -12,7 +12,7 @@ public class FinanceiroTest {
 
     @BeforeAll
     static void setup() {
-        cliente = new Cliente("11122233344", "Carlos");
+        cliente = new Cliente("13579024680", "Felipe");
         BancoDeDados.addCliente(cliente);
     }
 

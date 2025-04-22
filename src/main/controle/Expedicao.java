@@ -13,12 +13,12 @@ public class Expedicao {
 
         // Se não foi pago, não envia
         if (!pago) {
-            System.out.println("Pagamento não identificado. Pedido não enviado.");
+            System.out.println("O pagamento não foi identificado. O pedido não foi enviado... :(");
             return false;
         }
 
         // Se foi pago, simula envio
-        System.out.println("Pedido enviado com sucesso!");
+        System.out.println("O pedido foi enviado com sucesso... ;)");
         return true;
     }
 }

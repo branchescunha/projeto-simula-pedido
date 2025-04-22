@@ -12,7 +12,7 @@ public class Financeiro {
 
         // Se estiver inadimplente, bloqueia
         if (cliente.isInadimplente()) {
-            System.out.println("Cliente inadimplente: " + cliente.getNome());
+            System.out.println("O cliente está inadimplente: " + cliente.getNome());
             return false;
         }
 

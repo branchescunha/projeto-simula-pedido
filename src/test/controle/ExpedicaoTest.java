@@ -12,7 +12,7 @@ public class ExpedicaoTest {
 
     @BeforeAll
     static void setup() {
-        cliente = new Cliente("55566677788", "Joana");
+        cliente = new Cliente("06940055178", "Isabele");
         BancoDeDados.addCliente(cliente);
     }
 

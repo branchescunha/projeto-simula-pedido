@@ -21,13 +21,13 @@ public class BancoDeDados {
         for (Cliente c : clientes) {
             if (c.getCPF().equals(cpf)) return c;
         }
-        throw new NullPointerException("Cliente não existe na base de dados");
+        throw new NullPointerException("Cliente inexistente na base de dados.");
     }
 
     public static Produto getProduto(String nome) {
         for (Produto p : produtos) {
             if (p.getNome().equals(nome)) return p;
         }
-        throw new NullPointerException("Produto não existe ou está sem estoque");
+        throw new NullPointerException("Produto inexistente ou sem estoque.");
     }
 }

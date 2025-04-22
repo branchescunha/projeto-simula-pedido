@@ -7,10 +7,10 @@ public class Produto {
 
     public Produto(String nome, float preco) {
         if (nome.isBlank()) {
-            throw new IllegalArgumentException("Nome do produto não pode ser vazio!");
+            throw new IllegalArgumentException("Precisa-se de um nome no produto!");
         }
         if (preco < 0.01f) {
-            throw new IllegalArgumentException("Produto não pode custar menos que 1 centavo!");
+            throw new IllegalArgumentException("O valor do produto deve ser superior a 1 centavo!");
         }
         this.nome = nome;
         this.preco = preco;
@@ -21,7 +21,7 @@ public class Produto {
 
     public void setPreco(float preco) {
         if (preco < 0.01f) {
-            throw new IllegalArgumentException("Produto não pode custar menos que 1 centavo!");
+            throw new IllegalArgumentException("O valor do produto deve ser superior a 1 centavo!");
         }
         this.preco = preco;
     }
